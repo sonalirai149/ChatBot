@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./Main.css";
+import {API_KEY} from /Users/sonali/chatbot/src/utilities.js
 
 const Main = () => {
   const [searchText, setSearchText] = useState("");
@@ -9,7 +10,7 @@ const Main = () => {
   const [isChatBoxAtBottom, setIsChatBoxAtBottom] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
-  const API_KEY = "AIzaSyAUBR7ulGO1RVyiXFnAMGJNvi8NDlmyDp0";
+  
 
   const handleClick = async () => {
     if (!searchText.trim()) return;
